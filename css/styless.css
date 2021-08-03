@@ -32,8 +32,11 @@
 }
 
 
+
 .bg{
     position: relative;
+    background-color: #000;
+    height: 200px;
 }
 
 .footer {
