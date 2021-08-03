@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body onload="readOrder()">
+    
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top newColorPurple text-while">
+        <a href="#" class="text-while navbar-brand">
+            <i class="logo1 fas fa-cookie-bite"></i> Cupcake Store
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto menu">
+                <li class="nav-item active">
+                    <a href="admin.html" class="nav-link">Orders</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="order.html" class="nav-link">Edit Order</a>
+                </li>
+                <li class="nav-item active">
+                    <a target="_blank" href="../index.html" class="nav-link">Website</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../cart.html" class="nav-link">Shopping Cart</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <a class="text-white nav-link" href="../index.html">
+                   Logout <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </a>
+            
+            </form>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-4 p-5">
+    <div class="row">
+        <div id="firstSection" class="col-md-6">
+            <form class="border p-4 md-4" id="form" action="">
+                <div class="form-group">
+                    <label>Order</label>
+                    <input type="text" class="form-control" id="order" placeholder="order">
+                </div>
+                <div class="form-group">
+                    <label>Total</label>
+                    <input type="text" class="form-control" id="total" placeholder="total">
+                </div>
+                <button type="submit" id="button1" class="btn btn-outline-success">
+                    <i class="fa fa-plus">Add Order</i>
+                </button>
+                <button style="display: none;" id="button2" class="btn btn-outline-warning"></button>
+
+                <button style="display: none;" id="button3" class="btn btn-outline-danger"></button>
+            </form>
+        </div>
+        <div class="col-md-6 border" id="cardSection">
+    
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.all.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="js/order.js"></script>
+</html>

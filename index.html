@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styless.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/frameworks.css">
+    
+
+    <title>Cupcake Store</title>
+</head>
+
+<body onload="render()">
+
+    <!-- hedder -->
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top newColorPurple text-while">
+            <a href="#" class="text-while navbar-brand">
+                <i class="logo1 fas fa-cookie-bite"></i> Cupcake Store
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Cupcakes" class="nav-link">Cupcake</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Promotions" class="nav-link">Promotions</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Box" class="nav-link">Cupcake Box</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <a class="text-white nav-link" href="cart.html">
+                        <i class="text-warning fas fa-shopping-cart"></i> Cart
+                        <i style="color: yellow;" id="cart_n"></i>
+                    </a>
+                    <a data-toggle="modal" data-target="#ModalCenter" class="nav-link 
+                text-white" href="#">
+                        <i class="far fa-user"></i> Login
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li style="z-index:102;" data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="imgFilter first-slide" src="img/carousel/slide1.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Cupcake Store</h1>
+                            <p>Collect Points
+                                on Every Purchase
+                                Earn 1 point for every dollar spent! Points will be rounded to the nearest dollar.
+                                Those points can add up to rewards for pastries</p>
+                            <a role="button" class="btn text-while newColorPurple btn-lg
+                                    btn-warning " href="#">Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="imgFilter second-slide" src="img/carousel/slide2.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Cupcake Store</h1>
+                            <p>Collect Points
+                                on Every Purchase
+                                Earn 1 point for every dollar spent! Points will be rounded to the nearest dollar.
+                                Those points can add up to rewards for pastries</p>
+                            <a role="button" class="btn text-while newColorPurple btn-lg
+                                    btn-warning " href="#">Product</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="imgFilter third-slide" src="img/carousel/slide3.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Cupcake Store</h1>
+                            <p>Collect Points
+                                on Every Purchase
+                                Earn 1 point for every dollar spent! Points will be rounded to the nearest dollar.
+                                Those points can add up to rewards for pastries</p>
+                            <p>
+                                <a role="button" class="btn text-while newColorPurple btn-lg
+                                    btn-warning " href="#">Product</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a style="z-index:101;" class="carousel-control-prev" role="button" data-slide="prev" href="#myCarousel">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previus</span>
+            </a>
+
+            <a style="z-index:101;" class="carousel-control-next" role="button" data-slide="next" href="#myCarousel">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- end mycarousel -->
+        <br>
+        <div class="container marketing">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i style="color: #fcc246; font-size: 10rem;" class="fas fa-cookie-bite"></i>
+                    <h2>Cupcake</h2>
+                    <p> We are a well established Dublin Company, in operation since 2008
+                        and we've been delivering branded cupcakes longer than other companies.</p>
+                    <p><a class="btn btn-warning text-while newColorPurple" href="#Cupcakes" role="button">View Details
+                            &raquo;></a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <i style="color: #fcc246; font-size: 10rem;" class="fas fa-fire"></i>
+                    <h2>PUPCAKES</h2>
+                    <p>Say it with Sprinkles! Our stylish & modern dozen and gift boxes make the perfect addition and sentiment no matter what the occasion.</p>
+                    <p><a class="btn btn-warning text-while newColorPurple" href="#Cupcakes" role="button">View Details
+                            &raquo;</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <i style="color: #fcc246; font-size: 10rem;" class="fas fa-box"></i>
+                    <h2>ASSORTED BOXES</h2>
+                    <p> Want to turn your favorite cupcake into a mini? Place an order in advance and we'll bake them up. Please note there is an order minimum for minis. </p>
+                    <p><a class="btn btn-warning text-while newColorPurple" href="#Cupcakes" role="button">View Details
+                            &raquo;></a></p>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <h2 style="padding-top: 70px;" id="Cupcakes">Cupcakes</h2>
+            <hr>
+            <div class="row" id="cakeDiv"></div>
+            <hr class="featurette-divider">
+            <div class="row" id="promotionDiv"></div>
+            <hr class="featurette-divider">
+            <div class="row" id="boxDiv"></div>
+            <hr class="featurette-divider">
+
+            <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 id="ModalLongTitle" class="modal-title">
+                                Login
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <form autocomplete="off" id="formA" class="text-center border border-light p-5">
+                            <p class="h4 mb-4">
+                                Login
+                            </p>
+                            <input type="email" required id="emaila" class="form-control mb-4" placeholder="Email">
+                            <input type="password" required id="passworda" class="form-control mb-4"
+                                placeholder="Password">
+                            <button style="color: while;" type="submit"
+                                class="btn btn-warning btn-block">Submit</button>
+                            <!-- emailaaa -->
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+          <footer class="container">
+            <p class="float-right" style="md-2">
+                <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+            </p>
+        </footer>
+        <div class="bg" style="background-color: black; padding: 50px; text-align: center; ">
+            <p class="float-left">OUR STORY
+                <br>
+                SPRINKLES PERKS
+                 
+                CAREERS
+                
+                PRIVACY POLICY
+                 </p>
+
+            copyright © 2021 all rights reserved
+        </div>
+
+    </main>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.all.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-database.js"></script>
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
