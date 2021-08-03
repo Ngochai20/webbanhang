@@ -32,6 +32,13 @@
 }
 
 
+.bg{
+    position: relative;
+}
 
-
-
+.footer {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50px;
+}
